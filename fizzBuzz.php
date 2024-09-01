@@ -11,25 +11,21 @@ const FIZZBUZZ = "FizzBuzz";
  * @param int $n The upper limit of the FizzBuzz sequence.
  * @return array The FizzBuzz sequence as an array of strings.
  */
-function fizzBuzz(int $n): array {
-    $result = [];
+function fizzBuzz(int $n): array
+{
+	$result = [];
 
-    for ($i = 1; $i <= $n; $i++) {
-        if ($i % 3 === 0 && $i % 5 === 0) {
-            $result[] = FIZZBUZZ;
-        } elseif ($i % 3 === 0) {
-            $result[] = FIZZ;
-        } elseif ($i % 5 === 0) {
-            $result[] = BUZZ;
-        } else {
-            $result[] = (string)$i;
-        }
-    }
+	for ($i = 1; $i <= $n; $i++) {
+		if ($i % 3 === 0 && $i % 5 === 0) {
+			$result[] = FIZZBUZZ;
+		} elseif ($i % 3 === 0) {
+			$result[] = FIZZ;
+		} elseif ($i % 5 === 0) {
+			$result[] = BUZZ;
+		} else {
+			$result[] = (string)$i;
+		}
+	}
 
-    return $result;
+	return $result;
 }
-
-// Example usage
-$n = 15;
-$output = fizzBuzz($n);
-print_r($output);

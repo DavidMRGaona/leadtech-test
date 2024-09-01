@@ -30,8 +30,3 @@ function longestConsecutive(array $nums): int {
 
     return $longestStreak;
 }
-
-// Test
-$input = [100, 4, 200, 1, 3, 2];
-$output = longestConsecutive($input);
-echo $output;
